@@ -10,7 +10,7 @@ jobs:
       - name: Install WordPress
         run: |
           docker pull wordpress:latest
-          docker run -it -p 80:80 wordpress:latest
+          docker run -it -p 9000:80 wordpress:latest
       - name: Call route
         run: |
           curl http://localhost:80/another-route
